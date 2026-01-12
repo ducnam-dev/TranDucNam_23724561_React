@@ -1,0 +1,19 @@
+{
+  "name": "tranducnam_23724561_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ducnam-dev/TranDucNam_23724561_React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ducnam-dev/TranDucNam_23724561_React/issues"
+  },
+  "homepage": "https://github.com/ducnam-dev/TranDucNam_23724561_React#readme"
+}
