@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    MIN_SCORE = 100;
+    function calAverage(score1, score2, score3){
+        return (score1 + score2 + score3) / 3;
+    }
+
+     var button = document.getElementById("button");
+    function checkWin(dolfin, Koala){
+
+        if(dolfin > Koala && dolfin >= MIN_SCORE){
+            console.log('Điểm số dolfin cao hon Koala');
+        }else if(dolfin < Koala && Koala >= MIN_SCORE){
+            console.log('Điểm số Koala cao hon dolfin');
+        } else if(dolfin  == Koala && dolfin >= MIN_SCORE && Koala >= MIN_SCORE){
+            console.log('Hai đội hòa nhau');
+        }
+        else {
+            console.log('Không có đội nào win hết');
+        }
+     }
+     const dolfinAvg = calAverage(96, 108, 89);
+        const KoalaAvg = calAverage(88, 91, 110);
+        console.log("Dữ liệu 1:")
+        checkWin(dolfinAvg, KoalaAvg);
+        console.log("Dữ liệu 2:")
+        const dolfinAvg2 = calAverage(97, 112, 101);
+        const KoalaAvg2 = calAverage(109, 95, 123);
+        checkWin(dolfinAvg2, KoalaAvg2);
+        console.log("Dữ liệu 3:")
+        const dolfinAvg3 = calAverage(97, 112, 101);
+        const KoalaAvg3 = calAverage(109, 95, 106);
+        checkWin(dolfinAvg3, KoalaAvg3);
+     
+ </script>
+</body>
+</html>
